@@ -7,6 +7,6 @@ import { ServiceDocumentationComponent } from './services/service-documentation/
 export const APP_ROUTES: Routes = [
   { path: '', component: ComponentDocumentationComponent},
   { path: 'directives', component: DirectiveDocumentationComponent},
-  { path: 'pipes', component: PipeDocumentationComponent},
+  { path: 'pipes', loadChildren: () => import('./pipes/pipes.module').then((m) => m.PipesModule)},
   { path: 'services', component: ServiceDocumentationComponent}
 ];
