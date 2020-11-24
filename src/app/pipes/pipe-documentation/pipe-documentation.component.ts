@@ -5,11 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './pipe-documentation.component.html',
   styleUrls: ['./pipe-documentation.component.scss']
 })
-export class PipeDocumentationComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class PipeDocumentationComponent {
 
 }
+

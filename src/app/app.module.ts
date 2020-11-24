@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
-import { CardComponent } from './components/card/card.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { StarRatingsComponent } from './components/star-ratings/star-ratings.component';
@@ -13,23 +12,26 @@ import { ComponentDocumentationComponent } from './components/component-document
 import { APP_ROUTES } from './app.routes';
 import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
 import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
+import { LoaderComponent } from './components/loader/loader.component';
+import { SharedModule } from './shared/shared/shared.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    CardComponent,
     AccordionComponent,
     ProgressBarComponent,
     StarRatingsComponent,
     TopOfPageComponent,
     ComponentDocumentationComponent,
     ServiceDocumentationComponent,
-    DirectiveDocumentationComponent
+    DirectiveDocumentationComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
+    SharedModule,
     RouterModule.forRoot(APP_ROUTES)
   ],
   providers: [],
