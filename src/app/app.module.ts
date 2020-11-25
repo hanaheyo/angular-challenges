@@ -14,6 +14,8 @@ import { ServiceDocumentationComponent } from './services/service-documentation/
 import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { SharedModule } from './shared/shared/shared.module';
+import { CreditCardInputComponent } from './components/credit-card-input/credit-card-input/credit-card-input.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -28,11 +30,13 @@ import { SharedModule } from './shared/shared/shared.module';
     ServiceDocumentationComponent,
     DirectiveDocumentationComponent,
     LoaderComponent,
+    CreditCardInputComponent,
   ],
   imports: [
     BrowserModule,
     SharedModule,
-    RouterModule.forRoot(APP_ROUTES)
+    RouterModule.forRoot(APP_ROUTES),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
