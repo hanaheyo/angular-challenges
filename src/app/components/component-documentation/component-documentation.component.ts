@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item.interface';
+import { LoaderType } from '../loader/models/loader-type.enum';
 
 @Component({
   selector: 'app-component-documentation',
   templateUrl: './component-documentation.component.html',
   styleUrls: ['./component-documentation.component.scss']
 })
-export class ComponentDocumentationComponent implements OnInit {
+export class ComponentDocumentationComponent {
   public accordionItems: AccordionItem[] = [
     {
       title: 'Example 1',
@@ -19,11 +20,8 @@ export class ComponentDocumentationComponent implements OnInit {
       isExpanded: false,
     }
   ];
+
   public progressValue = 25;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  public loaderType = LoaderType.Loading;
 }
