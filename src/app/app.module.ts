@@ -17,6 +17,7 @@ import { SharedModule } from './shared/shared/shared.module';
 import { CreditCardInputComponent } from './components/credit-card-input/credit-card-input/credit-card-input.component';
 import { FormsModule } from '@angular/forms';
 import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
+import { LinkedinPostComponent } from './components/linkedin-post/linkedin-post.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { TwitterPostComponent } from './components/twitter-post/twitter-post.com
     LoaderComponent,
     CreditCardInputComponent,
     TwitterPostComponent,
+    LinkedinPostComponent,
   ],
   imports: [
     BrowserModule,
