@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './components/linkedin-post/linkedin-post.component';
 import { ModalComponent } from './components/modal/modal/modal.component';
+import { DebounceClickDirective } from './directives/debounce-click/debounce-click.directive';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { ModalComponent } from './components/modal/modal/modal.component';
     TwitterPostComponent,
     LinkedinPostComponent,
     ModalComponent,
+    DebounceClickDirective,
   ],
   imports: [
     BrowserModule,
