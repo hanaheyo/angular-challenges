@@ -3,6 +3,12 @@
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Flatten'" [subTitle]="'Pipes'">
   <div body>
+    {{ ['Hello', 'World', 'Hello World'] | appFilterTerm : 'world'}}
+  </div>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Flatten'" [subTitle]="'Pipes'">
+  <div body>
     {{ flattenData | appFlatten}}
   </div>
 

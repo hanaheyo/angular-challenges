@@ -13,7 +13,7 @@ import { APP_ROUTES } from './app.routes';
 import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
 import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
 import { LoaderComponent } from './components/loader/loader.component';
-import { SharedModule } from './shared/shared/shared.module';
+import { SharedModule } from './shared/shared.module';
 import { CreditCardInputComponent } from './components/credit-card-input/credit-card-input/credit-card-input.component';
 import { FormsModule } from '@angular/forms';
 import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
