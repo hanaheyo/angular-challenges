@@ -1,7 +1,11 @@
   <h1>Components</h1>
   <hr>
 
-  <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Quote'" [subTitle]="'Components'">
+  <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Toggle'" [subTitle]="'Components'">
+    <app-toggle [isOn]="toggleValue" body></app-toggle>
+  </app-card>
+
+  <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Q uote'" [subTitle]="'Components'">
     <app-quote body [quote]="'Confusion is your friend. It means you are learning.'" [author]="'Hana'" [occupation]="'Software Engineer, Frontend Developer'"></app-quote>
   </app-card>
 

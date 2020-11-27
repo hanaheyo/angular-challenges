@@ -22,6 +22,6 @@ export class ComponentDocumentationComponent {
   ];
 
   public progressValue = 25;
-
   public loaderType = LoaderType.Loading;
+  public toggleValue = false;
 }
